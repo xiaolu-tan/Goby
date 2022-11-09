@@ -82,7 +82,7 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_CONFIRM_EMAIL_ON_GET = True
-LOGIN_URL = 'http://localhost:8100/users/login'
+LOGIN_URL = 'http://goby.apextask.com/users/login'
 
 ROOT_URLCONF = 'goby_backend.urls'
 
@@ -168,3 +168,8 @@ EMAIL_HOST_USER = 'xiaolu.tan@qq.com'
 EMAIL_HOST_PASSWORD = 'trkccwujrypobhbf'
 # EMAIL_PORT = 465
 DEFAULT_FROM_EMAIL='xiaolu.tan@qq.com'
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=2),
+}
