@@ -15,10 +15,15 @@ import {AuthContext} from '../context/AuthContext';
 import axios from 'axios';
 import {BASE_URL} from '../config';
 import ExperienceListItem from '../components/ExperienceListItem';
+import ProjectListItem from '../components/ProjectListItem';
+import EducationListItem from '../components/EducationListItem';
+// import {ProjectList, ProjectDetail} from './ProjectScreen';
 
 const ProfileScreen = ({navigation}) => {
   const {experienceList, userInfo, userToken} = useContext(AuthContext);
   const [profileExperience, setProfileExperience] = useState(null);
+  const [profileProject, setProfileProject] = useState(null);
+  const [profileEducation, setProfileEducation] = useState(null);
   // console.log(profileExperience);
   const fetchData = () => {
     try {
@@ -46,6 +51,68 @@ const ProfileScreen = ({navigation}) => {
           // profileExperience.map(item => {
           //   console.log(item.title);
           // });
+        })
+        .catch(function (error) {
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log('errors==== ');
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
+        });
+      // get projects by userid
+      axios
+        .get(
+          `${BASE_URL}/users/profile/project?userid=${userInfo.user.pk}`,
+          bodyParameters,
+          config,
+        )
+        .then(res => {
+          console.log('result============');
+          console.log(res.data);
+          setProfileProject(res.data);
+        })
+        .catch(function (error) {
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log('errors==== ');
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
+        });
+      // get educations by userid
+      axios
+        .get(
+          `${BASE_URL}/users/profile/education?userid=${userInfo.user.pk}`,
+          bodyParameters,
+          config,
+        )
+        .then(res => {
+          console.log('result============');
+          console.log(res.data);
+          setProfileEducation(res.data);
         })
         .catch(function (error) {
           if (error.response) {
@@ -100,8 +167,8 @@ const ProfileScreen = ({navigation}) => {
               justifyContent: 'center',
               marginLeft: 5,
             }}>
-            <Text>Name 1</Text>
-            <Text>Name 2</Text>
+            <Text>{userInfo === null ? '' : userInfo.user.username}</Text>
+            {/* <Text>Name 2</Text> */}
           </View>
         </View>
         <View>
@@ -226,15 +293,36 @@ const ProfileScreen = ({navigation}) => {
                 alignItems: 'center',
                 width: 60,
               }}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ProjectDetail')}>
                 <Icon name="add-sharp" size={30} />
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('ProjectScreen')}>
                 <Icon name="pencil-outline" size={20} />
               </TouchableOpacity>
             </View>
           </View>
-          <TouchableOpacity style={{marginTop: 10}}>
+          {profileProject &&
+            profileProject.map(item => (
+              <ProjectListItem
+                key={item.id}
+                projectName={item.projectName}
+                startdate={item.startdate}
+                enddate={item.enddate}
+                description={item.description}
+                onPress={() =>
+                  navigation.navigate('ProjectDetail', {
+                    projectName: item.projectName,
+                    id: item.id,
+                    startdate: item.startdate,
+                    enddate: item.enddate,
+                    description: item.description,
+                  })
+                }
+              />
+            ))}
+          {/* <TouchableOpacity style={{marginTop: 10}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <UserAvatar size={50} name="East China Normal University" />
               <View style={{flexDirection: 'column', marginLeft: 15}}>
@@ -244,7 +332,7 @@ const ProfileScreen = ({navigation}) => {
                 <Text style={{color: 'gray'}}>2005 - 2008 · 3 yrs</Text>
               </View>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
         <View>
           <View
@@ -262,15 +350,40 @@ const ProfileScreen = ({navigation}) => {
                 alignItems: 'center',
                 width: 60,
               }}>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('EducationDetail')}>
                 <Icon name="add-sharp" size={30} />
               </TouchableOpacity>
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('EducationList')}>
                 <Icon name="pencil-outline" size={20} />
               </TouchableOpacity>
             </View>
           </View>
-          <TouchableOpacity style={{marginTop: 10}}>
+          {profileEducation &&
+            profileEducation.map(item => (
+              <EducationListItem
+                key={item.id}
+                schoolName={item.schoolName}
+                degree={item.degree}
+                fieldOfStudy={item.fieldOfStudy}
+                startdate={item.startdate}
+                enddate={item.enddate}
+                description={item.description}
+                onPress={() =>
+                  navigation.navigate('EducationDetail', {
+                    schoolName: item.schoolName,
+                    degree: item.degree,
+                    fieldOfStudy: item.fieldOfStudy,
+                    id: item.id,
+                    startdate: item.startdate,
+                    enddate: item.enddate,
+                    description: item.description,
+                  })
+                }
+              />
+            ))}
+          {/* <TouchableOpacity style={{marginTop: 10}}>
             <View style={{flexDirection: 'row', alignItems: 'center'}}>
               <UserAvatar size={50} name="East China Normal University" />
               <View style={{flexDirection: 'column', marginLeft: 15}}>
@@ -280,7 +393,7 @@ const ProfileScreen = ({navigation}) => {
                 <Text style={{color: 'gray'}}>2005 - 2008 · 3 yrs</Text>
               </View>
             </View>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
         <View>
           <View

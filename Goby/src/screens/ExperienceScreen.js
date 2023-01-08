@@ -2,7 +2,7 @@
  * @Author: Xiaolu xiaolutan@apexglobe.com
  * @Date: 2022-10-15 01:51:34
  * @LastEditors: Xiaolu xiaolutan@apexglobe.com
- * @LastEditTime: 2022-11-13 23:00:20
+ * @LastEditTime: 2023-01-02 23:38:14
  * @FilePath: /Goby/src/screens/ExperienceScreen.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -70,6 +70,7 @@ export const ExperienceDetail = ({navigation, route}) => {
     setDescription(value);
   };
   const onCompanyChange = (value: any) => {
+    console.log(value);
     setCompany(value);
   };
   const [time, setTime] = useState(null);
@@ -104,9 +105,10 @@ export const ExperienceDetail = ({navigation, route}) => {
       company: company,
       description: description,
     };
-    console.log(bodyParameters);
-    console.log(route);
-    if (route.params.id) {
+    console.log('Save==========');
+    // console.log('body data is' + JSON.stringify(bodyParameters));
+    // console.log(route);
+    if (route.params && route.params.id) {
       axios
         .put(
           `${BASE_URL}/users/profile/experience/${route.params.id}`,
@@ -150,7 +152,7 @@ export const ExperienceDetail = ({navigation, route}) => {
             // The request was made but no response was received
             // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
             // http.ClientRequest in node.js
-            console.log(error.request);
+            console.log('error request' + error.request);
           } else {
             // Something happened in setting up the request that triggered an Error
             console.log('Error', error.message);
@@ -158,6 +160,8 @@ export const ExperienceDetail = ({navigation, route}) => {
           console.log(error.config);
         });
     } else {
+      console.log('Save 111==========');
+      console.log(title.Text);
       axios
         .post(`${BASE_URL}/users/profile/experience/`, bodyParameters, config)
         .then(res => {
@@ -207,66 +211,68 @@ export const ExperienceDetail = ({navigation, route}) => {
     }
   };
   const fetchData = () => {
-    try {
-      const config = {
-        headers: {
-          Authorization: `Bearer ${userToken}`,
-          'Content-Type': 'application/json',
-        },
-      };
-      // const bodyParameters = {
-      //   userid: userInfo.user.pk,
-      // };
-      // console.log(bodyParameters);
-      // console.log(config);
-      console.log(route.params);
-      axios
-        .get(
-          `${BASE_URL}/users/profile/experience/${route.params?.id}`,
-          // bodyParameters,
-          config,
-        )
-        .then(res => {
-          console.log('result============');
-          console.log(res.data);
-          setProfileExperience(res.data);
-          // profileExperience.map(item => {
-          //   console.log(item.title);
-          // });
-          let a = res.data;
-          console.log(a.startdate);
-          if (a.startdate) {
-            setStartDate(moment(a.startdate));
-          }
-          a.title ? setTitle(a.title) : setTitle('');
-          a.company ? setCompany(a.company) : setCompany('');
-          a.description ? setDescription(a.description) : setDescription('');
-          a.enddate ? setEndDate(moment(a.enddate)) : setEndDate(null);
-          console.log(moment(startDate).format('yyyy-MMM'));
-        })
-        .catch(function (error) {
-          if (error.response) {
-            // The request was made and the server responded with a status code
-            // that falls out of the range of 2xx
-            console.log('errors==== ');
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-          } else if (error.request) {
-            // The request was made but no response was received
-            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-            // http.ClientRequest in node.js
-            console.log(error.request);
-          } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log('Error', error.message);
-          }
-          console.log(error.config);
-        });
-    } catch (e) {
-      console.log(`experienceList is error ` + e);
+    if (route.params && route.params.id) {
+      try {
+        const config = {
+          headers: {
+            Authorization: `Bearer ${userToken}`,
+            'Content-Type': 'application/json',
+          },
+        };
+        // const bodyParameters = {
+        //   userid: userInfo.user.pk,
+        // };
+        // console.log(bodyParameters);
+        // console.log(config);
+        console.log(route.params);
+        axios
+          .get(
+            `${BASE_URL}/users/profile/experience/${route.params?.id}`,
+            // bodyParameters,
+            config,
+          )
+          .then(res => {
+            console.log('result============');
+            console.log(res.data);
+            setProfileExperience(res.data);
+            // profileExperience.map(item => {
+            //   console.log(item.title);
+            // });
+            let a = res.data;
+            console.log(a.startdate);
+            if (a.startdate) {
+              setStartDate(moment(a.startdate));
+            }
+            a.title ? setTitle(a.title) : setTitle('');
+            a.company ? setCompany(a.company) : setCompany('');
+            a.description ? setDescription(a.description) : setDescription('');
+            a.enddate ? setEndDate(moment(a.enddate)) : setEndDate(null);
+            console.log(moment(startDate).format('yyyy-MMM'));
+          })
+          .catch(function (error) {
+            if (error.response) {
+              // The request was made and the server responded with a status code
+              // that falls out of the range of 2xx
+              console.log('errors==== ');
+              console.log(error.response.data);
+              console.log(error.response.status);
+              console.log(error.response.headers);
+            } else if (error.request) {
+              // The request was made but no response was received
+              // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+              // http.ClientRequest in node.js
+              console.log(error.request);
+            } else {
+              // Something happened in setting up the request that triggered an Error
+              console.log('Error', error.message);
+            }
+            console.log(error.config);
+          });
+      } catch (e) {
+        console.log(`experienceList is error ` + e);
+      }
+      console.log(profileExperience);
     }
-    console.log(profileExperience);
   };
   useEffect(() => {
     // console.log(route.startDate);
@@ -307,7 +313,7 @@ export const ExperienceDetail = ({navigation, route}) => {
               borderWidth: 1,
               margin: 5,
             }}
-            onChange={onCompanyChange}
+            onChange={() => onCompanyChange}
             defaultValue={company}></TextInput>
         </View>
         <View

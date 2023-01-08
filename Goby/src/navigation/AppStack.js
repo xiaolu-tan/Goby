@@ -2,7 +2,7 @@
  * @Author: Xiaolu Tan xiaolutan@apexglobe.com
  * @Date: 2022-05-02 21:57:26
  * @LastEditors: Xiaolu xiaolutan@apexglobe.com
- * @LastEditTime: 2022-10-30 22:56:51
+ * @LastEditTime: 2023-01-08 23:00:10
  * @FilePath: /react-navigation-v6-mix-master/src/navigation/AppStack.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -18,7 +18,9 @@ import MessagesScreen from '../screens/MessagesScreen';
 import MomentsScreen from '../screens/MomentsScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ExperienceList, {ExperienceDetail} from '../screens/ExperienceScreen';
-
+import ProjectList from '../screens/ProjectScreen';
+import {ProjectDetail} from '../screens/ProjectScreen';
+import EducationList, {EducationDetail} from '../screens/EducationScreen';
 import TabNavigator from './TabNavigator';
 import HomeScreen from '../screens/HomeScreen';
 
@@ -108,6 +110,26 @@ const AppStack = () => {
       <Stack.Screen
         name="ExperienceDetail"
         component={ExperienceDetail}
+        options={{headerShown: true}}
+      />
+      <Stack.Screen
+        name="ProjectList"
+        component={ProjectList}
+        options={{headerShown: true}}
+      />
+      <Stack.Screen
+        name="ProjectDetail"
+        component={ProjectDetail}
+        options={{headerShown: true}}
+      />
+      <Stack.Screen
+        name="EducationList"
+        component={EducationList}
+        options={{headerShown: true}}
+      />
+      <Stack.Screen
+        name="EducationDetail"
+        component={EducationDetail}
         options={{headerShown: true}}
       />
     </Stack.Navigator>
