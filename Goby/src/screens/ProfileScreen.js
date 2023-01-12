@@ -298,7 +298,7 @@ const ProfileScreen = ({navigation}) => {
                 <Icon name="add-sharp" size={30} />
               </TouchableOpacity>
               <TouchableOpacity
-                onPress={() => navigation.navigate('ProjectScreen')}>
+                onPress={() => navigation.navigate('ProjectList')}>
                 <Icon name="pencil-outline" size={20} />
               </TouchableOpacity>
             </View>

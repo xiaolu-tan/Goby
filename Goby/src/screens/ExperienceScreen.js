@@ -2,7 +2,7 @@
  * @Author: Xiaolu xiaolutan@apexglobe.com
  * @Date: 2022-10-15 01:51:34
  * @LastEditors: Xiaolu xiaolutan@apexglobe.com
- * @LastEditTime: 2023-01-02 23:38:14
+ * @LastEditTime: 2023-01-12 06:41:18
  * @FilePath: /Goby/src/screens/ExperienceScreen.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -32,11 +32,92 @@ import {AuthContext} from '../context/AuthContext';
 import axios from 'axios';
 import {BASE_URL} from '../config';
 import Textarea from 'react-native-textarea';
+import ExperienceListItem from '../components/ExperienceListItem';
 
-const ExperienceList = () => {
+const ExperienceList = ({navigation, route}) => {
+  const {experienceList, userInfo, userToken} = useContext(AuthContext);
+  const [profileExperience, setProfileExperience] = useState(null);
+  const fetchData = () => {
+    try {
+      const config = {
+        headers: {
+          Authorization: `Bearer ${userToken}`,
+          'Content-Type': 'application/json',
+        },
+      };
+      const bodyParameters = {
+        userid: userInfo.user.pk,
+      };
+      // console.log(bodyParameters);
+      // console.log(config);
+      axios
+        .get(
+          `${BASE_URL}/users/profile/experience?userid=${userInfo.user.pk}`,
+          bodyParameters,
+          config,
+        )
+        .then(res => {
+          console.log('result============');
+          console.log(res.data);
+          setProfileExperience(res.data);
+          // profileExperience.map(item => {
+          //   console.log(item.title);
+          // });
+        })
+        .catch(function (error) {
+          if (error.response) {
+            // The request was made and the server responded with a status code
+            // that falls out of the range of 2xx
+            console.log('errors==== ');
+            console.log(error.response.data);
+            console.log(error.response.status);
+            console.log(error.response.headers);
+          } else if (error.request) {
+            // The request was made but no response was received
+            // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+            // http.ClientRequest in node.js
+            console.log(error.request);
+          } else {
+            // Something happened in setting up the request that triggered an Error
+            console.log('Error', error.message);
+          }
+          console.log(error.config);
+        });
+    } catch (e) {
+      console.log(`experienceList is error ` + e);
+    }
+    console.log(profileExperience);
+  };
+  useEffect(() => {
+    const willFocusSubscription = navigation.addListener('focus', () => {
+      fetchData();
+    });
+
+    return willFocusSubscription;
+  }, []);
   return (
     <View>
-      <Text>ExperienceList</Text>
+      {profileExperience &&
+        profileExperience.map(item => (
+          <ExperienceListItem
+            key={item.id}
+            company={item.company}
+            title={item.title}
+            startdate={item.startdate}
+            enddate={item.enddate}
+            description={item.description}
+            onPress={() =>
+              navigation.navigate('ExperienceDetail', {
+                title: item.title,
+                id: item.id,
+                company: item.company,
+                startdate: item.startdate,
+                enddate: item.enddate,
+                description: item.description,
+              })
+            }
+          />
+        ))}
     </View>
   );
 };
