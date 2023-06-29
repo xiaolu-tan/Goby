@@ -2,7 +2,7 @@
  * @Author: Xiaolu xiaolutan@apexglobe.com
  * @Date: 2022-10-15 01:51:34
  * @LastEditors: Xiaolu xiaolutan@apexglobe.com
- * @LastEditTime: 2023-01-12 06:41:18
+ * @LastEditTime: 2023-01-29 14:26:33
  * @FilePath: /Goby/src/screens/ExperienceScreen.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -27,7 +27,7 @@ import {
   Result,
 } from '@ant-design/react-native';
 import moment from 'moment';
-import enUS from '@ant-design/react-native/lib/locale-provider/en_US';
+// import enUS from '@ant-design/react-native/lib/locale-provider/en_US';
 import {AuthContext} from '../context/AuthContext';
 import axios from 'axios';
 import {BASE_URL} from '../config';
@@ -367,7 +367,7 @@ export const ExperienceDetail = ({navigation, route}) => {
     return willFocusSubscription;
   }, []);
   return (
-    <Provider locale={enUS}>
+    <Provider>
       <View
         style={{
           flex: 1,

@@ -3,33 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* GobyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GobyTests.m */; };
+		05199862EEEE4152922908EE /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A27F947927F04D2D99341E2E /* Roboto-BoldItalic.ttf */; };
+		117FB8FEAD084A9FB91F41D5 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C66F1B672140638666AF4C /* Roboto-Bold.ttf */; };
+		12138D02B1C5481FB6099226 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0B57A2E48914C2C9D2D50BF /* Inter-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		378BFD0A64247AAB3E912549 /* libPods-Goby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 481B11D13D5055BFB3FA9F77 /* libPods-Goby.a */; };
-		649DB1E31FA582ECD5FDD61C /* libPods-Goby-GobyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D38E4B51DD1173DD44DFAFA /* libPods-Goby-GobyTests.a */; };
-		77929FAC28FD64BA00B7C98C /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929F9C28FD64B900B7C98C /* FontAwesome5_Solid.ttf */; };
-		77929FAD28FD64BA00B7C98C /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929F9D28FD64B900B7C98C /* Foundation.ttf */; };
-		77929FAE28FD64BA00B7C98C /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929F9E28FD64B900B7C98C /* Octicons.ttf */; };
-		77929FAF28FD64BA00B7C98C /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929F9F28FD64B900B7C98C /* SimpleLineIcons.ttf */; };
-		77929FB028FD64BA00B7C98C /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA028FD64B900B7C98C /* Zocial.ttf */; };
-		77929FB128FD64BA00B7C98C /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA128FD64B900B7C98C /* Ionicons.ttf */; };
-		77929FB228FD64BA00B7C98C /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA228FD64B900B7C98C /* AntDesign.ttf */; };
-		77929FB328FD64BA00B7C98C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA328FD64B900B7C98C /* EvilIcons.ttf */; };
-		77929FB428FD64BA00B7C98C /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA428FD64B900B7C98C /* FontAwesome.ttf */; };
-		77929FB528FD64BA00B7C98C /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA528FD64B900B7C98C /* Entypo.ttf */; };
-		77929FB628FD64BA00B7C98C /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA628FD64BA00B7C98C /* MaterialCommunityIcons.ttf */; };
-		77929FB728FD64BA00B7C98C /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA728FD64BA00B7C98C /* Feather.ttf */; };
-		77929FB828FD64BA00B7C98C /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA828FD64BA00B7C98C /* MaterialIcons.ttf */; };
-		77929FB928FD64BA00B7C98C /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FA928FD64BA00B7C98C /* FontAwesome5_Brands.ttf */; };
-		77929FBA28FD64BA00B7C98C /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FAA28FD64BA00B7C98C /* FontAwesome5_Regular.ttf */; };
-		77929FBB28FD64BA00B7C98C /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77929FAB28FD64BA00B7C98C /* Fontisto.ttf */; };
+		48FA15FD80784A3FA6A3FC80 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48534C21B92A4CB78EF96DBE /* Roboto-Medium.ttf */; };
+		4C30C82C1FD7468A805852E2 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC4E8F0AE5F4B97AB4A5CC7 /* Roboto-MediumItalic.ttf */; };
+		772656782A4D519900F1DE07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 772656772A4D519900F1DE07 /* GoogleService-Info.plist */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8655401B9F05429FBE3967D5 /* antoutline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EC53CE2CD014B5F8DD5F62E /* antoutline.ttf */; };
+		95045FFA6463B01F779151AA /* Pods_Goby_GobyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 457C5D21FBC4792A1010E5DC /* Pods_Goby_GobyTests.framework */; };
+		A93CFC2C67194AF0B83449AD /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A6922ADC7BD4702BACC7D35 /* Roboto-Italic.ttf */; };
+		D49BB060CCC196F8B766A32B /* Pods_Goby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11D7CC3AA04ACF1F839BB3C /* Pods_Goby.framework */; };
+		E02FCAC09F74451A8E67EB5D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7C436BFFCF049709C3EF8EE /* Roboto-Regular.ttf */; };
+		E187E00959A4432892A3D670 /* antfill.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0340B00B650949F4AA9EE113 /* antfill.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,17 +40,22 @@
 		00E356EE1AD99517003FC87E /* GobyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GobyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* GobyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GobyTests.m; sourceTree = "<group>"; };
-		048D2D9183AD490D9B398DAB /* Pods-Goby-GobyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby-GobyTests.release.xcconfig"; path = "Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests.release.xcconfig"; sourceTree = "<group>"; };
-		136262C0A73114F4F0400B9D /* Pods-Goby-GobyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby-GobyTests.debug.xcconfig"; path = "Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0340B00B650949F4AA9EE113 /* antfill.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antfill.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antfill.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Goby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Goby/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Goby/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Goby/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Goby/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Goby/main.m; sourceTree = "<group>"; };
-		3D38E4B51DD1173DD44DFAFA /* libPods-Goby-GobyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goby-GobyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E3799F6A27CEE4914E9C7FA /* Pods-Goby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby.debug.xcconfig"; path = "Target Support Files/Pods-Goby/Pods-Goby.debug.xcconfig"; sourceTree = "<group>"; };
-		481B11D13D5055BFB3FA9F77 /* libPods-Goby.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Goby.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C66F1B672140638666AF4C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		1A6922ADC7BD4702BACC7D35 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		457C5D21FBC4792A1010E5DC /* Pods_Goby_GobyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goby_GobyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48534C21B92A4CB78EF96DBE /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		4D785B1EB2812D26129F05B6 /* Pods-Goby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby.debug.xcconfig"; path = "Target Support Files/Pods-Goby/Pods-Goby.debug.xcconfig"; sourceTree = "<group>"; };
+		618C2D00C6833881E1343BEA /* Pods-Goby-GobyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby-GobyTests.debug.xcconfig"; path = "Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EC53CE2CD014B5F8DD5F62E /* antoutline.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = antoutline.ttf; path = "../node_modules/@ant-design/icons-react-native/fonts/antoutline.ttf"; sourceTree = "<group>"; };
+		772656762A4D511A00F1DE07 /* Goby.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Goby.entitlements; path = Goby/Goby.entitlements; sourceTree = "<group>"; };
+		772656772A4D519900F1DE07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		77929F9C28FD64B900B7C98C /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		77929F9D28FD64B900B7C98C /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		77929F9E28FD64B900B7C98C /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
@@ -74,8 +73,14 @@
 		77929FAA28FD64BA00B7C98C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		77929FAB28FD64BA00B7C98C /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Goby/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0B57A2E48914C2C9D2D50BF /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
+		A27F947927F04D2D99341E2E /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AC6945DEC7E02F3607702771 /* Pods-Goby-GobyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby-GobyTests.release.xcconfig"; path = "Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests.release.xcconfig"; sourceTree = "<group>"; };
+		C11D7CC3AA04ACF1F839BB3C /* Pods_Goby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7C436BFFCF049709C3EF8EE /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CFC4E8F0AE5F4B97AB4A5CC7 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DCBE8DAAFC57582FB4146293 /* Pods-Goby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby.release.xcconfig"; path = "Target Support Files/Pods-Goby/Pods-Goby.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F6317DB5B9270682C6162E2C /* Pods-Goby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goby.release.xcconfig"; path = "Target Support Files/Pods-Goby/Pods-Goby.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649DB1E31FA582ECD5FDD61C /* libPods-Goby-GobyTests.a in Frameworks */,
+				95045FFA6463B01F779151AA /* Pods_Goby_GobyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378BFD0A64247AAB3E912549 /* libPods-Goby.a in Frameworks */,
+				D49BB060CCC196F8B766A32B /* Pods_Goby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,8 @@
 		13B07FAE1A68108700A75B9A /* Goby */ = {
 			isa = PBXGroup;
 			children = (
+				772656772A4D519900F1DE07 /* GoogleService-Info.plist */,
+				772656762A4D511A00F1DE07 /* Goby.entitlements */,
 				77929F9B28FD63EE00B7C98C /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -133,8 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				481B11D13D5055BFB3FA9F77 /* libPods-Goby.a */,
-				3D38E4B51DD1173DD44DFAFA /* libPods-Goby-GobyTests.a */,
+				C11D7CC3AA04ACF1F839BB3C /* Pods_Goby.framework */,
+				457C5D21FBC4792A1010E5DC /* Pods_Goby_GobyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -142,10 +149,10 @@
 		718A4B241EE29ECA50AA3762 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E3799F6A27CEE4914E9C7FA /* Pods-Goby.debug.xcconfig */,
-				F6317DB5B9270682C6162E2C /* Pods-Goby.release.xcconfig */,
-				136262C0A73114F4F0400B9D /* Pods-Goby-GobyTests.debug.xcconfig */,
-				048D2D9183AD490D9B398DAB /* Pods-Goby-GobyTests.release.xcconfig */,
+				4D785B1EB2812D26129F05B6 /* Pods-Goby.debug.xcconfig */,
+				DCBE8DAAFC57582FB4146293 /* Pods-Goby.release.xcconfig */,
+				618C2D00C6833881E1343BEA /* Pods-Goby-GobyTests.debug.xcconfig */,
+				AC6945DEC7E02F3607702771 /* Pods-Goby-GobyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -189,6 +196,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				718A4B241EE29ECA50AA3762 /* Pods */,
+				D7D6BC30B40F4D68B6464EB3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -204,6 +212,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D7D6BC30B40F4D68B6464EB3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0B57A2E48914C2C9D2D50BF /* Inter-Bold.ttf */,
+				17C66F1B672140638666AF4C /* Roboto-Bold.ttf */,
+				A27F947927F04D2D99341E2E /* Roboto-BoldItalic.ttf */,
+				1A6922ADC7BD4702BACC7D35 /* Roboto-Italic.ttf */,
+				48534C21B92A4CB78EF96DBE /* Roboto-Medium.ttf */,
+				CFC4E8F0AE5F4B97AB4A5CC7 /* Roboto-MediumItalic.ttf */,
+				C7C436BFFCF049709C3EF8EE /* Roboto-Regular.ttf */,
+				0340B00B650949F4AA9EE113 /* antfill.ttf */,
+				6EC53CE2CD014B5F8DD5F62E /* antoutline.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,12 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GobyTests" */;
 			buildPhases = (
-				AAB6131B3A8E40CABBDC9A26 /* [CP] Check Pods Manifest.lock */,
+				49CCDDE436340DE18075D424 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				5C9C5D65495C3EBFC2D8D144 /* [CP] Embed Pods Frameworks */,
-				0E351B0F9F49778D507B845E /* [CP] Copy Pods Resources */,
+				76AAE2DBE6CB08E0852FC9A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,13 +255,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Goby" */;
 			buildPhases = (
-				B188AA2AE151ADDDF1D93FA2 /* [CP] Check Pods Manifest.lock */,
+				DED2A0B5D99AC13ACDE639E0 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				6882BF4980F73CC1315B6582 /* [CP] Embed Pods Frameworks */,
+				D631718AB72221660706BDD1 /* [CP] Copy Pods Resources */,
+				14419DEF83FF92B9BBF1469A /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
@@ -267,7 +291,7 @@
 				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Goby" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -297,24 +321,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77929FBB28FD64BA00B7C98C /* Fontisto.ttf in Resources */,
-				77929FAE28FD64BA00B7C98C /* Octicons.ttf in Resources */,
-				77929FB528FD64BA00B7C98C /* Entypo.ttf in Resources */,
-				77929FB828FD64BA00B7C98C /* MaterialIcons.ttf in Resources */,
-				77929FB428FD64BA00B7C98C /* FontAwesome.ttf in Resources */,
-				77929FAC28FD64BA00B7C98C /* FontAwesome5_Solid.ttf in Resources */,
-				77929FB128FD64BA00B7C98C /* Ionicons.ttf in Resources */,
-				77929FB328FD64BA00B7C98C /* EvilIcons.ttf in Resources */,
-				77929FAD28FD64BA00B7C98C /* Foundation.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				77929FB928FD64BA00B7C98C /* FontAwesome5_Brands.ttf in Resources */,
-				77929FB728FD64BA00B7C98C /* Feather.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				77929FB228FD64BA00B7C98C /* AntDesign.ttf in Resources */,
-				77929FB628FD64BA00B7C98C /* MaterialCommunityIcons.ttf in Resources */,
-				77929FAF28FD64BA00B7C98C /* SimpleLineIcons.ttf in Resources */,
-				77929FBA28FD64BA00B7C98C /* FontAwesome5_Regular.ttf in Resources */,
-				77929FB028FD64BA00B7C98C /* Zocial.ttf in Resources */,
+				12138D02B1C5481FB6099226 /* Inter-Bold.ttf in Resources */,
+				117FB8FEAD084A9FB91F41D5 /* Roboto-Bold.ttf in Resources */,
+				772656782A4D519900F1DE07 /* GoogleService-Info.plist in Resources */,
+				05199862EEEE4152922908EE /* Roboto-BoldItalic.ttf in Resources */,
+				A93CFC2C67194AF0B83449AD /* Roboto-Italic.ttf in Resources */,
+				48FA15FD80784A3FA6A3FC80 /* Roboto-Medium.ttf in Resources */,
+				4C30C82C1FD7468A805852E2 /* Roboto-MediumItalic.ttf in Resources */,
+				E02FCAC09F74451A8E67EB5D /* Roboto-Regular.ttf in Resources */,
+				E187E00959A4432892A3D670 /* antfill.ttf in Resources */,
+				8655401B9F05429FBE3967D5 /* antoutline.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,58 +353,20 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		0E351B0F9F49778D507B845E /* [CP] Copy Pods Resources */ = {
+		14419DEF83FF92B9BBF1469A /* [CP-User] [RNFB] Core Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
+			name = "[CP-User] [RNFB] Core Configuration";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | /usr/bin/head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -Ku -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    if ! python3 --version >/dev/null 2>&1; then echo \"python3 not found, firebase.json file processing error.\" && exit 1; fi\n    _JSON_OUTPUT_BASE64=$(python3 -c 'import json,sys,base64;print(base64.b64encode(bytes(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"', '\"'rb'\"').read())['${_JSON_ROOT}']), '\"'utf-8'\"')).decode())' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.analytics_registration_with_ad_network_enabled\n  _ANALYTICS_REGISTRATION_WITH_AD_NETWORK=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_registration_with_ad_network_enabled\")\n  if [[ $_ANALYTICS_REGISTRATION_WITH_AD_NETWORK ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_REGISTRATION_WITH_AD_NETWORK_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_REGISTRATION_WITH_AD_NETWORK\")\")\n  fi\n\n  # config.google_analytics_automatic_screen_reporting_enabled\n  _ANALYTICS_AUTO_SCREEN_REPORTING=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"google_analytics_automatic_screen_reporting_enabled\")\n  if [[ $_ANALYTICS_AUTO_SCREEN_REPORTING ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAutomaticScreenReportingEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_SCREEN_REPORTING\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
 		};
-		5C9C5D65495C3EBFC2D8D144 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6882BF4980F73CC1315B6582 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goby/Pods-Goby-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Goby/Pods-Goby-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goby/Pods-Goby-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AAB6131B3A8E40CABBDC9A26 /* [CP] Check Pods Manifest.lock */ = {
+		49CCDDE436340DE18075D424 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,7 +388,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B188AA2AE151ADDDF1D93FA2 /* [CP] Check Pods Manifest.lock */ = {
+		76AAE2DBE6CB08E0852FC9A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goby-GobyTests/Pods-Goby-GobyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D631718AB72221660706BDD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goby/Pods-Goby-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Goby/Pods-Goby-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Goby/Pods-Goby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED2A0B5D99AC13ACDE639E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,7 +496,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 136262C0A73114F4F0400B9D /* Pods-Goby-GobyTests.debug.xcconfig */;
+			baseConfigurationReference = 618C2D00C6833881E1343BEA /* Pods-Goby-GobyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -509,7 +523,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 048D2D9183AD490D9B398DAB /* Pods-Goby-GobyTests.release.xcconfig */;
+			baseConfigurationReference = AC6945DEC7E02F3607702771 /* Pods-Goby-GobyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -533,13 +547,17 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E3799F6A27CEE4914E9C7FA /* Pods-Goby.debug.xcconfig */;
+			baseConfigurationReference = 4D785B1EB2812D26129F05B6 /* Pods-Goby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Goby/Goby.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A3845943S;
 				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				INFOPLIST_FILE = Goby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +567,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.goby;
 				PRODUCT_NAME = Goby;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -559,12 +577,16 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6317DB5B9270682C6162E2C /* Pods-Goby.release.xcconfig */;
+			baseConfigurationReference = DCBE8DAAFC57582FB4146293 /* Pods-Goby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Goby/Goby.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5A3845943S;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				INFOPLIST_FILE = Goby/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +596,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.goby;
 				PRODUCT_NAME = Goby;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -586,7 +608,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -614,7 +636,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -638,11 +660,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -652,7 +674,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -680,7 +702,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -697,10 +719,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

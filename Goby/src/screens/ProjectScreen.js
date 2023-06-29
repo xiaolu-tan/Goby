@@ -2,7 +2,7 @@
  * @Author: Xiaolu xiaolutan@apexglobe.com
  * @Date: 2023-01-02 23:41:59
  * @LastEditors: Xiaolu xiaolutan@apexglobe.com
- * @LastEditTime: 2023-01-12 07:11:21
+ * @LastEditTime: 2023-01-29 16:38:27
  * @FilePath: /Goby/src/screens/ProjectScreen.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,7 +17,7 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from 'react-native';
-import enUS from '@ant-design/react-native/lib/locale-provider/en_US';
+// import enUS from '@ant-design/react-native/lib/locale-provider/en_US';
 import Icon from 'react-native-vector-icons/Ionicons';
 import UserAvatar from 'react-native-user-avatar';
 import {
@@ -35,6 +35,7 @@ import moment from 'moment';
 import {AuthContext} from '../context/AuthContext';
 import axios from 'axios';
 import {BASE_URL} from '../config';
+import {SuccessAnimation} from 'react-native-success-animation';
 
 const ProjectList = ({navigation, route}) => {
   const {experienceList, userInfo, userToken} = useContext(AuthContext);
@@ -121,6 +122,8 @@ const ProjectList = ({navigation, route}) => {
 export default ProjectList;
 
 export const ProjectDetail = ({navigation, route}) => {
+  const [state, setState] = useState(false);
+
   const [profileProject, setProfileEducation] = useState(null);
   const [startDate, setStartDate] = useState();
   const [startVisible, setStartVisible] = useState(false);
@@ -233,7 +236,7 @@ export const ProjectDetail = ({navigation, route}) => {
   }, []);
   return (
     <>
-      <Provider locale={enUS}>
+      <Provider>
         <View
           style={{
             flex: 1,
@@ -344,9 +347,28 @@ export const ProjectDetail = ({navigation, route}) => {
             onChangeText={onDescriptionChange}
             defaultValue={description}
           />
-          <Button style={{margin: 5}} type="primary">
+          <Button
+            style={{margin: 5}}
+            type="primary"
+            onPress={() => setState(prevState => !prevState)}>
             Save
           </Button>
+        </View>
+        <View
+          style={{flex: 0.5, justifyContent: 'center', alignItems: 'center'}}>
+          {state && (
+            <SuccessAnimation
+              size={120}
+              iconSize={120 * 0.7}
+              dotColor={'#44c6b1'}
+              iconColor={'white'}
+              dotSize={20}
+              duration={2000}
+              backgroundColor={'#44c6b1'}
+              animatedLayerColor={'white'}
+              onAnimationEnd={() => alert('Animation Ended')}
+            />
+          )}
         </View>
       </Provider>
     </>

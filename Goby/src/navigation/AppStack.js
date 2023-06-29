@@ -2,7 +2,7 @@
  * @Author: Xiaolu Tan xiaolutan@apexglobe.com
  * @Date: 2022-05-02 21:57:26
  * @LastEditors: Xiaolu xiaolutan@apexglobe.com
- * @LastEditTime: 2023-01-08 23:00:10
+ * @LastEditTime: 2023-04-19 14:22:32
  * @FilePath: /react-navigation-v6-mix-master/src/navigation/AppStack.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -23,6 +23,9 @@ import {ProjectDetail} from '../screens/ProjectScreen';
 import EducationList, {EducationDetail} from '../screens/EducationScreen';
 import TabNavigator from './TabNavigator';
 import HomeScreen from '../screens/HomeScreen';
+import JobManagementScreen from '../screens/JobManagementScreen';
+import {JobDetailScreen} from '../screens/JobManagementScreen';
+import NewJobScreen from '../screens/NewJobScreen';
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
@@ -82,6 +85,16 @@ const Root = () => {
         }}
       /> */}
       <Drawer.Screen
+        name="Job Management"
+        component={JobManagementScreen}
+        options={{
+          drawerIcon: ({color}) => (
+            <Ionicons name="document-outline" size={22} color={color} />
+          ),
+          headerShown: true,
+        }}
+      />
+      <Drawer.Screen
         name="Settings"
         component={SettingsScreen}
         options={{
@@ -130,6 +143,16 @@ const AppStack = () => {
       <Stack.Screen
         name="EducationDetail"
         component={EducationDetail}
+        options={{headerShown: true}}
+      />
+      <Stack.Screen
+        name="JobDetail"
+        component={JobDetailScreen}
+        options={{headerShown: true}}
+      />
+      <Stack.Screen
+        name="NewJob"
+        component={NewJobScreen}
         options={{headerShown: true}}
       />
     </Stack.Navigator>

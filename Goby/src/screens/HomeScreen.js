@@ -140,7 +140,7 @@ export default function HomeScreen({navigation}) {
           <Text style={{fontSize: 18, fontFamily: 'Roboto-Medium'}}>
             Discover jobs
           </Text>
-          <TouchableOpacity onPress={() => {}}>
+          <TouchableOpacity onPress={() => navigation.navigate('NewJob')}>
             {/* <Text style={{color: '#0aada8'}}>See all</Text> */}
             <Icon name="add" size={25} />
           </TouchableOpacity>
@@ -169,7 +169,7 @@ export default function HomeScreen({navigation}) {
         {jobs &&
           jobs.map(item => (
             <JobListItem
-              key={item.id}
+              key={item.pk}
               // photo={item.poster}
               title={item.title}
               description={item.description}
